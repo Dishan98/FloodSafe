@@ -1,0 +1,269 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <!--====== USEFULL META ======-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Transportation & Agency Template is a simple Smooth transportation and Agency Based Template" />
+    <meta name="keywords" content="Portfolio, Agency, Onepage, Html, Business, Blog, Parallax" />
+
+    <!--====== TITLE TAG ======-->
+    <title>Flash Flood Monitoring and Management System</title>
+
+    <!--====== FAVICON ICON =======-->
+    <link rel="shortcut icon" type="image/ico" href="{{ url_for('static',filename='img/favicon.png')}}" />
+
+    <!--====== STYLESHEETS ======-->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/stellarnav.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.css')}}">
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/font-awesome.min.css')}}" rel="stylesheet">
+
+    <!--====== MAIN STYLESHEETS ======-->
+    
+    <link href="{{ url_for('static',filename='style2.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/responsive.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='style1.css')}}" rel="stylesheet">
+
+    <script src="{{ url_for('static',filename='js/vendor/modernizr-2.8.3.min.js')}}"></script>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="home-one">
+
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--- PRELOADER -->
+    <div class="preeloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!--SCROLL TO TOP-->
+    <a href="#home" class="scrolltotop"><i class="fa fa-long-arrow-up"></i></a>
+
+    <!--START TOP AREA-->
+    <header class="top-area" id="home">
+        <div class="top-area-bg" data-stellar-background-ratio="0.6"></div>
+        <div class="header-top-area">
+            <!--MAINMENU AREA-->
+            <div class="mainmenu-area" id="mainmenu-area">
+                <div class="mainmenu-area-bg"></div>
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="#home" class="navbar-brand">FFMMS</a>
+                        </div>
+                        <div id="main-nav" class="stellarnav ">
+                            <ul id="nav" class="nav navbar-nav">
+                                <li><a href="{{ url_for('index')}}">home</a></li>
+                                <li><a href="{{ url_for('about_team')}}">about</a> </li>
+                                <li><a href="{{ url_for('service')}}">Service</a></li>
+                                <!-- <li><a href="blog.html">Blog</a></li> -->
+                                <li><a href="{{ url_for('contact')}}">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--END MAINMENU AREA END-->
+        </div>
+        <!--HOME SLIDER AREA-->
+        <div class="welcome-slider-area">
+            <div class="welcome-single-slide slider-bg-one">
+                <div class="container">
+                    <div class="row flex-v-center">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="welcome-text text-center">
+                                <h1>FLASH FLOOD MONITORING AND MANAGEMENT SYSTEM</h1>
+                                <div class="home-button">
+                                    <a href="{{ url_for('floodHome')}}">FLOOD PREDICTION</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome-single-slide slider-bg-two">
+                <div class="container">
+                    <div class="row flex-v-center">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="welcome-text text-center">
+                                <h1>FLASH FLOOD MONITORING AND MANAGEMENT SYSTEM</h1>
+                                <p>FLOOD FORECASTING REQUIRES ACCURATE ESTIMATES OF THE SPATIAL AND TEMPORAL RAINFALL RATES OVER A CATCHMENT.</p>
+                                <div class="home-button">
+                                    <a href="{{ url_for('floodHome')}}">FLOOD PREDICTION</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END HOME SLIDER AREA-->
+    </header>
+    <!--END TOP AREA-->
+
+    <section id="more-features" class="section-bg">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="section-title">Features</h3>
+            <span class="section-divider"></span>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box wow fadeInLeft">
+                <div class="icon">
+                  <i> <ion-icon name="warning-outline"></ion-icon></i>
+                </div>
+                <h4 class="title">Real-Time Alerts</h4>
+                <p class="description">
+                  Real time rain and flood warnings for your home area
+                </p>
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+              <div class="box wow fadeInRight">
+                <div class="icon">
+                  <i><ion-icon name="thunderstorm-outline"></ion-icon></i>
+                </div>
+                <h4 class="title">Rainfall Details</h4>
+                <p class="description">
+                  Real-time rainfall details and reports
+                </p>
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+              <div class="box wow fadeInLeft">
+                <div class="icon">
+                  <i> <ion-icon name="home-outline"></ion-icon></i>
+                </div>
+                <h4 class="title">Select your home area</h4>
+                <p class="description">
+                  Get notifications about flood situations in your area
+                </p>
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+              <div class="box wow fadeInRight">
+                <div class="icon">
+                  <i> <ion-icon name="analytics-outline"></ion-icon></i>
+                </div>
+                <h4 class="title">Get reports</h4>
+                <p class="description">
+                  Get analytical reports of the area you select
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <!--FOOER AREA-->
+    <section id="footer">
+        <div class="container">
+          <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <h5>FFMMS</h5>
+              <ul class="list-unstyled quick-links">
+                <li>
+                  We are a set of students building a flood monitoring and warning
+                  system.
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <h5>Pages</h5>
+              <ul class="list-unstyled quick-links">
+                <li><a href="{{ url_for('index')}}"> Home</a></li>
+                <li>
+                  <a href="{{ url_for('about_team')}}"> About</a>
+                </li>
+                <li>
+                  <a href="{{ url_for('service')}}"> Service</a>
+                </li>
+                <li>
+                  <a href="{{ url_for('contact')}}">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <h5>Haven't registered yet?</h5>
+              <ul class="list-unstyled quick-links">
+                <li>
+                  <a href="#">Register Now</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+  
+            <hr />
+          </div>
+  
+          <div class="row">
+            <div
+              class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-black"
+            >
+              <p>© FFMMS Group 3 GPSD Intake 36 FOC KDU</p>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </section>
+    <!--FOOER AREA END-->
+
+
+    <!--====== SCRIPTS JS ======-->
+    <script src="{{ url_for('static',filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/vendor/bootstrap.min.js')}}"></script>
+
+    <!--====== PLUGINS JS ======-->
+    <script src="{{ url_for('static',filename='js/vendor/jquery.easing.1.3.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/vendor/jquery-migrate-1.2.1.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/vendor/jquery.appear.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/stellar.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/wow.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/stellarnav.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/contact-form.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/jquery.sticky.js')}}"></script>
+
+    <!--===== ACTIVE JS=====-->
+    <script src="{{ url_for('static',filename='js/main.js')}}"></script>
+</body>
+
+</html>

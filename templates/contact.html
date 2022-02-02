@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Contact Us</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <!-- Favicons -->
+    <link href="{{ url_for('static',filename='assets/img/rain.png')}}" rel="icon" />
+    <link href="{{ url_for('static',filename='assets/img/rain.png')}}" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet"/>
+
+    <!-- Vendor CSS Files -->
+    <link href="{{ url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/ionicons/css/ionicons.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/venobox/venobox.css')}}" rel="stylesheet"/>
+
+    <link href="{{ url_for('static',filename='css/normalize.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='css/animate.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='css/stellarnav.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='css/owl.carousel.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='css/font-awesome.min.css')}}" rel="stylesheet"/>
+
+    <link href="{{ url_for('static',filename='stylesheet.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='css/responsive.css')}}" rel="stylesheet"/>
+
+    <!-- Template Main CSS File -->
+    <link href="{{ url_for('static',filename='main.css')}}" rel="stylesheet"/>
+    <!--<link href="{{ url_for('static',filename='stylesheet.css')}}" rel="stylesheet"/>-->
+
+    <script src="{{ url_for('static',filename='js/vendor/modernizr-2.8.3.min.js')}}"></script>
+
+    <!-- =======================================================
+  * Template Name: Avilon - v2.1.0
+  * Template URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-storage.js"></script> 
+
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header-transparent">
+      <div class="container">
+        <div id="logo" class="pull-left">
+          <h1><a href="{{ url_for('home')}}" class="scrollto">FFMMS</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="{{ url_for('home')}}">HOME</a></li>
+            <li><a href="{{ url_for('about_team')}}">ABOUT</a></li>
+            <li><a href="{{ url_for('service')}}">SERVICES</a></li>
+            <li><a href="{{ url_for('contact')}}">CONTACT</a></li>
+          </ul>
+        </nav>
+        <!-- #nav-menu-container -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Intro Section ======= -->
+    <section id="intro">
+      <div class="intro-text">
+        <h2>Flash Flood Monitoring and Management System</h2>
+        <p>CONTACT US</p>
+      </div>
+
+      <div class="product-screens">
+        <div
+          class="product-screen-1 wow fadeInUp"
+          data-wow-delay="0.4s"
+          data-wow-duration="0.6s"
+        >
+          <img src="" alt="" />
+        </div>
+
+        <div
+          class="product-screen-2 wow fadeInUp"
+          data-wow-delay="0.2s"
+          data-wow-duration="0.6s"
+        >
+          <img src="" alt="" />
+        </div>
+
+        <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
+          <img src="" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+              <h3 class="section-title">GET IN TOUCH</h3>
+              <span class="section-divider"></span>
+              <p class="section-description">Need any help just send a message via our email address</p>
+            </div>
+          </div>
+  
+          
+
+        <div class="container">
+          <div class="row wow fadeInUp">
+  
+            <div class="col-lg-4 col-md-4">
+              <div class="contact-about">
+                <h3>FFMMS</h3>
+                <p>Developed by: <br> Faculty of Computing <br> General Sir John Kotelawala Defence University <br> &copy; 2020</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="info">
+                <div>
+                  <i class="ion-ios-location-outline"></i>
+                  <p>Ratmalana, Sri Lanka</p>
+                </div>
+  
+                <div>
+                  <i class="ion-ios-email-outline"></i>
+                  <p>info.ffmms@gmail.com</p>
+                </div>
+  
+                <div>
+                  <i class="ion-ios-telephone-outline"></i>
+                  <p>+94 777 123 456</p>
+                </div>
+  
+              </div>
+            </div>
+  
+            <div class="col-lg-5 col-md-8">
+              <div class="form">
+                <form action="#" id="contactForm" method="post" role="form" class="php-email-form">
+                  <div class="form-row">
+                    <div class="form-group col-lg-6">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                      <div class="validate"></div>
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                      <div class="validate"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" id="content" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validate"></div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" name="send" title="Send Message" style="background-color: rgba(26, 183, 245, 0.795);">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="container">
+          <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <h5>FFMMS</h5>
+              <ul class="list-unstyled quick-links">
+                <li>
+                  We are a set of students building a flood monitoring and warning
+                  system.
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <h5>Pages</h5>
+              <ul class="list-unstyled quick-links">
+                <li>
+                  <a href="{{ url_for('home')}}">Home</a>
+                </li>
+                <li>
+                  <a href="{{ url_for('about_team')}}">About</a>
+                </li>
+                <li>
+                  <a href="{{ url_for('service')}}">Services</a>
+                </li>
+                <li>
+                  <a href="{{ url_for('contact')}}">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <h5>Account</h5>
+              <ul class="list-unstyled quick-links">
+                <li>
+                  <a href="#">My Profile</a>
+                </li>
+                <li>
+                  <a href="#">Settings</a>
+                </li>
+                <li>
+                  <a href="#">Log Out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+  
+            <hr />
+          </div>
+  
+          <div class="row">
+            <div
+              class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-black"
+            >
+              <p>© FFMMS Group 3 GPSD Intake 36 FOC KDU</p>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </section>
+  
+      <!-- End More Features Section -->
+      <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+      <link href="{{ url_for('static',filename='assets/vendor/jquery/jquery.min.js')}}" rel="stylesheet"/>
+      <link href="{{ url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}" rel="stylesheet"/>
+      <link href="{{ url_for('static',filename='assets/vendor/jquery.easing/jquery.easing.min.js')}}" rel="stylesheet"/>
+      <link href="{{ url_for('static',filename='assets/vendor/wow/wow.min.js')}}" rel="stylesheet"/>
+      <link href="{{ url_for('static',filename='assets/vendor/venobox/venobox.min.js')}}" rel="stylesheet"/>
+      <link href="{{ url_for('static',filename='assets/vendor/superfish/superfish.min.js')}}" rel="stylesheet"/>
+      <link href="{{ url_for('static',filename='assets/vendor/hoverIntent/hoverIntent.js')}}" rel="stylesheet"/>
+  
+  
+  
+      <!-- Template Main JS File -->
+      <script src="{{ url_for('static',filename='js/main.js')}}"></script>
+
+   <script src="{{ url_for('static',filename='js/index.js')}}"></script>
+    
+  </body>
+</html>

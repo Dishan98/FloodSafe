@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flood Result</title>
+        <link href="{{ url_for('static',filename='assetsNEW/main.css')}}" rel="stylesheet"/>
+    </head>
+
+    <body>
+      <div class="col-md-6">
+                <div class="main-card mb-3 card">
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-outer">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Discharge</div>
+                                                <div class="widget-subheading">The volume of water that passes through a given cross section per unit time. </div>
+                                            </div>
+                                            <div class="widget-content-right">
+                                                <div class="widget-numbers text-success">{{result[0]}}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-outer">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Flood Runoff</div>
+                                                <div class="widget-subheading">The flow of water occurring on the ground surface when excess rainwater</div>
+                                            </div>
+                                            <div class="widget-content-right">
+                                                <div class="widget-numbers text-primary">{{result[1]}}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-outer">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Mean Absolute Error</div>
+                                                <div class="widget-subheading"></div>
+                                            </div>
+                                            <div class="widget-content-right">
+                                                <div class="widget-numbers text-danger">{{result[4]}}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-outer">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Predicted Water Level</div>
+                                                <div class="widget-subheading"></div>
+                                            </div>
+                                            <div class="widget-content-right">
+                                                <div class="widget-numbers text-warning">{{result[5]}}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="widget-content p-0">
+                                  <div class="widget-content-outer">
+                                      <div class="widget-content-wrapper">
+                                          <div class="widget-content-left">
+                                              <div class="widget-heading">Actual Water level</div>
+                                              <div class="widget-subheading"></div>
+                                          </div>
+                                          <div class="widget-content-right">
+                                              <div class="widget-numbers text-warning">{{result[6]}}</div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='assetsNEW/scripts/main.js')}}"></script>
+
+    </body>
+</html>

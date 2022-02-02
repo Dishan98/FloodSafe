@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Flood Home</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- Favicons -->
+    <link href="{{url_for('static',filename='assets/img/rain.png')}}" rel="icon" />
+    <link href="{{url_for('static',filename='assets/img/rain.png')}}" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet"/>
+
+    <!-- Vendor CSS Files -->
+    <link href="{{ url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/ionicons/css/ionicons.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/venobox/venobox.css')}}" rel="stylesheet"/>
+
+    <!-- Template Main CSS File -->
+    <link href="{{ url_for('static',filename='main.css')}}" rel="stylesheet"/>
+    
+    
+    
+
+
+    <!-- =======================================================
+  * Template Name: Avilon - v2.1.0
+  * Template URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header-transparent">
+      <div class="container">
+        <div id="logo" class="pull-left">
+          <h1><a href="{{ url_for('home')}}" class="scrollto">FFMMS</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="{{ url_for('home')}}">HOME</a></li>
+            <li><a href="{{ url_for('about_team')}}">ABOUT</a></li>
+            <li><a href="{{ url_for('service')}}">SERVICES</a></li>
+            <li><a href="{{ url_for('contact')}}">CONTACT</a></li>
+
+          </ul>
+        </nav>
+        <!-- #nav-menu-container -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Intro Section ======= -->
+    <section id="intro">
+      <div class="intro-text">
+        <h2>Flash Flood Monitoring and Management System</h2><br>
+        <p style="font-family: Open Sans">FLOOD FORECASTING REQUIRES ACCURATE ESTIMATES OF THE SPATIAL AND TEMPORAL RAINFALL RATES OVER A CATCHMENT</p><br>
+      </div>
+
+      <div class="product-screens">
+        <div
+          class="product-screen-1 wow fadeInUp"
+          data-wow-delay="0.4s"
+          data-wow-duration="0.6s"
+        >
+          <img src="" alt="" />
+        </div>
+
+        <div
+          class="product-screen-2 wow fadeInUp"
+          data-wow-delay="0.2s"
+          data-wow-duration="0.6s"
+        >
+          <img src="" alt="" />
+        </div>
+
+        <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
+          <img src="" alt="" />
+        </div>
+      </div>
+    </section>
+    
+    <section class="contact-area" >
+      <div class="contact-form-area section-padding gray-bg">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                      <br>
+                      <br>
+                      <div class="contact-form">
+                          <form action="{{url_for('floodResult')}}"  method="post">
+                              <div class="row">
+                                  <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                      <label >Select River:</label>
+                                            <select  class="form-control" name="SEL">
+                                                  <option selected>Choose...</option>
+                                                  <option value="Cauvery">Kelaniya</option>
+                                            </select>
+                                  </div>
+                                  
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                        <label >Date</label>
+                                        <div>
+                                          <input class="form-control" type="date" name="DATE" class="form-control" min="2010-01-01" max="2021-12-31">
+                                        </div>
+                                      </div>
+                              </div>
+                              <br>
+                              <div class="row">
+                                  <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                      <div class="form-group" style="top: 50px;">
+                                          <input type="submit" class="btn btn-primary btn-lg" value="CHECK" role="button" >
+                                      </div>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                      <div class="contact-image">
+                          <div class="contact-address" style="background-color: #e3ebf7; border-radius: 10px; width: 65%; margin: auto; position: absolute;top: 40%;left: 40%;">
+                              <h4 style="text-align: center; color: #000;" class="blink">NOTICE BOARD</h4>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item">{{result[0]}}</li>
+                                <li class="list-group-item">{{result[1]}}</li>
+                                <li class="list-group-item">{{result[2]}}</li>
+                              </ul>
+                          </div>
+                          <a href="{{url_for('refreshFlood')}}" class="btn btn-primary" style="width: 65%; margin: auto; position: absolute;top: 150px;left: 40%;">Reset</a>
+                      </div>
+                  </div>
+                    
+                     
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--CONTACT US AREA END-->
+  <hr>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>FFMMS</h5>
+            <ul class="list-unstyled quick-links">
+              <li>
+                We are a set of students building a flood monitoring and 
+                warning system.
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>Pages</h5>
+            <ul class="list-unstyled quick-links">
+              <li>
+                <a href="{{ url_for('home')}}">Home</a>
+              </li>
+              <li>
+                <a href="{{ url_for('about_team')}}">About</a>
+              </li>
+              <li>
+                <a href="{{ url_for('service')}}">Services</a>
+              </li>
+              <li>
+                <a href="{{ url_for('contact')}}">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>Account</h5>
+            <ul class="list-unstyled quick-links">
+              <li>
+                <a href="{{ url_for('home')}}">My Profile</a>
+              </li>
+              <li>
+                <a href="{{ url_for('about_team')}}">Settings</a>
+              </li>
+              <li>
+                <a href="{{ url_for('service')}}">Log Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+            <ul class="list-unstyled list-inline social text-center">
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <hr />
+        </div>
+
+        <div class="row">
+          <div
+            class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-black"
+          >
+            <p>© FFMMS Group 3 GPSD Intake 36 FOC KDU</p>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </section>
+
+    <!-- End More Features Section -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <link href="{{ url_for('static',filename='assets/vendor/jquery/jquery.min.js')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/jquery.easing/jquery.easing.min.js')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/wow/wow.min.js')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/venobox/venobox.min.js')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/superfish/superfish.min.js')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/hoverIntent/hoverIntent.js')}}" rel="stylesheet"/>
+
+
+
+    <!-- Template Main JS File -->
+    <script src="{{ url_for('static',filename='js/main.js')}}"></script>
+
+    <script src="{{ url_for('static',filename='js/index.js')}}"></script>
+
+  </body>
+</html>

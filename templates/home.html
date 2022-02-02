@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Home</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- Favicons -->
+    <link href="{{ url_for('static',filename='assets/img/rain.png')}}" rel="icon" />
+    <link href="{{ url_for('static',filename='assets/img/rain.png')}}" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet"/>
+  
+    <!-- Vendor CSS Files -->
+    <link href="{{ url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/ionicons/css/ionicons.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/venobox/venobox.css')}}" rel="stylesheet"/>
+
+    <!-- Template Main CSS File -->
+    <link href="{{ url_for('static',filename='main.css')}}" rel="stylesheet"/>
+
+    <!-- =======================================================
+  * Template Name: Avilon - v2.1.0
+  * Template URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header-transparent">
+      <div class="container">
+        <div id="logo" class="pull-left">
+          <h1><a href="{{ url_for('home')}}" class="scrollto">FFMMS</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="{{ url_for('home')}}">HOME</a></li>
+            <li><a href="{{ url_for('about_team')}}">ABOUT</a></li>
+            <li><a href="{{ url_for('service')}}">SERVICES</a></li>
+            <li><a href="{{ url_for('contact')}}">CONTACT</a></li>
+          </ul>
+        </nav>
+        <!-- #nav-menu-container -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Intro Section ======= -->
+    <section id="intro">
+      <div class="intro-text">
+        <h2>Flash Flood Monitoring and Management System</h2><br>
+        <p style="font-family: Open Sans">FLOOD FORECASTING REQUIRES ACCURATE ESTIMATES OF THE SPATIAL AND TEMPORAL RAINFALL RATES OVER A CATCHMENT</p><br>
+        <nobr>
+          <a href="{{ url_for('floodHome')}}" class="btn-get-started scrollto">FLOOD PREDICTION</a>
+        </nobr>
+      </div>
+
+      <div class="product-screens">
+        <div
+          class="product-screen-1 wow fadeInUp"
+          data-wow-delay="0.4s"
+          data-wow-duration="0.6s"
+        >
+          <img src="" alt="" />
+        </div>
+
+        <div
+          class="product-screen-2 wow fadeInUp"
+          data-wow-delay="0.2s"
+          data-wow-duration="0.6s"
+        >
+          <img src="" alt="" />
+        </div>
+
+        <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
+          <img src="" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="more-features" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Features</h3>
+          <span class="section-divider"></span>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft">
+              <div class="icon">
+                <i> <ion-icon name="warning-outline"></ion-icon></i>
+              </div>
+              <h4 class="title">Real-Time Alerts</h4>
+              <p class="description">
+                Real time rain and flood warnings for your home area
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight">
+              <div class="icon">
+                <i><ion-icon name="thunderstorm-outline"></ion-icon></i>
+              </div>
+              <h4 class="title">Rainfall Details</h4>
+              <p class="description">
+                Real-time rainfall details and reports
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft">
+              <div class="icon">
+                <i> <ion-icon name="home-outline"></ion-icon></i>
+              </div>
+              <h4 class="title">Select your home area</h4>
+              <p class="description">
+                Get notifications about flood situations in your area
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight">
+              <div class="icon">
+                <i> <ion-icon name="analytics-outline"></ion-icon></i>
+              </div>
+              <h4 class="title">Get reports</h4>
+              <p class="description">
+                Get analytical reports of the area you select
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>FFMMS</h5>
+            <ul class="list-unstyled quick-links">
+              <li>
+                We are a set of students building a flood monitoring and warning
+                system.
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>Pages</h5>
+            <ul class="list-unstyled quick-links">
+              <li>
+                <a href="{{ url_for('home')}}">Home</a>
+              </li>
+              <li>
+                <a href="{{ url_for('about_team')}}">About</a>
+              </li>
+              <li>
+                <a href="{{ url_for('service')}}">Services</a>
+              </li>
+              <li>
+                <a href="{{ url_for('contact')}}">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>Account</h5>
+            <ul class="list-unstyled quick-links">
+              <li>
+                <a href="#">My Profile</a>
+              </li>
+              <li>
+                <a href="#">Settings</a>
+              </li>
+              <li>
+                <a href="#">Log Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+            <ul class="list-unstyled list-inline social text-center">
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <hr />
+        </div>
+
+        <div class="row">
+          <div
+            class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-black"
+          >
+            <p>© FFMMS Group 3 GPSD Intake 36 FOC KDU</p>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </section>
+
+    <!-- End More Features Section -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <link href="{{ url_for('static',filename='assets/vendor/jquery/jquery.min.js')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/jquery.easing/jquery.easing.min.js')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/wow/wow.min.js')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/venobox/venobox.min.js')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/superfish/superfish.min.js')}}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='assets/vendor/hoverIntent/hoverIntent.js')}}" rel="stylesheet"/>
+
+
+
+    <!-- Template Main JS File -->
+    <script src="{{ url_for('static',filename='js/main.js')}}"></script>
+
+    <script src="{{ url_for('static',filename='js/index.js')}}"></script>
+    <script>
+      firebase.auth().onAuthStateChanged(function(Username)
+      {
+          if(Username)
+          {
+            window.location.href = "loginpage.html"; 
+          }
+      });
+    </script>
+
+  </body>
+</html>

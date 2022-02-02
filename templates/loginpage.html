@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>Login</title>
+    <link href="{{ url_for('static',filename='assets/img/rain.png')}}" rel="icon" />
+    <link href="{{ url_for('static',filename='assets/img/rain.png')}}" rel="apple-touch-icon" />
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet"/>
+    
+    <link href="{{ url_for('static',filename='assets/css/loginc.css')}}" rel="stylesheet" />
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-storage.js"></script>
+  
+  </head>
+  
+  <body>
+    <center>
+      <div class="container px-4 py-5 mx-auto">
+        <div class="card card0">
+          <div class="d-flex flex-lg-row flex-column-reverse">
+            <div class="card card1">
+              <div class="row justify-content-center my-auto">
+                <div class="col-md-8 col-10 my-5">
+                  <h3 class="mb-5 text-center heading">Flash Flood Monitoring And Management System</h3>
+                  <h6 class="msg-info">Please login to your account</h6>
+                  <div class="form-group">
+                    <label class="form-control-label text-muted">Username</label>
+                    <input type="text" id="email" name="email" placeholder="Phone no or email id" class="form-control"/>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label text-muted">Password</label>
+                    <input type="password" id="psw" name="psw" placeholder="Password" class="form-control"/>
+                  </div>
+                  <div class="row justify-content-center my-3 px-3">
+                    <button id="login" class="btn-block btn-color">Login to FFMHS</button>
+                  </div>
+                  <div class="row justify-content-center my-2">
+                    <a href="#"><small class="text-muted">Forgot Password?</small></a>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom text-center mb-5">
+                <p href="" class="sm-text mx-auto mb-3">Don't have an account?<button class="btn btn-white ml-2" onclick="window.location.href='signuppage.html'">Create</button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </center>
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="/__/firebase/7.16.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.16.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <script src="{{ url_for('static',filename='js/index.js')}}"></script>
+
+    <script>
+      firebase.auth().onAuthStateChanged(function(Username)
+      {
+          if(Username)
+          {
+            window.location.href = "{{ url_for('home') }}"; 
+          }
+      });
+    </script>
+
+  </body>
+</html>
